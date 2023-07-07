@@ -1,0 +1,3 @@
+{"rule":"MISSING_APOSTROPHE","sentence":"^\\QAs we ll see, such a phenomenon occurs for the single magnetic dipole in an oscillating magnetic field.\\E$"}
+{"rule":"MISSING_APOSTROPHE","sentence":"^\\QAs we ll see, such a phenomenon occurs for the single magnetic dipole in an oscillating magnetic field.\\E$"}
+{"rule":"MISSING_APOSTROPHE","sentence":"^\\QAs we ll see, such a phenomenon occurs for the single magnetic dipole in an oscillating magnetic field.\\E$"}
