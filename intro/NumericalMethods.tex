@@ -1,0 +1,26 @@
+\section{Numerical Methods}
+
+\subsection{Runge-Kutta 4th order}
+In order to investigate the equation (\ref{eq:EquationOfMotion}) numerically, we used the iterative method of Runge-Kutta of fourth order (RK4), which presents a low computational cost, and fourth order accuracy, i.e, at each iteration the error is $\mathcal{O}(h^4)$, where $h$ is the integration step.
+
+Before applying the method, we have transformed the second order differential equation of motion of dipole (\ref{eq:EquationOfMotion}), into two first order differential equation by making the transformations:
+
+\begin{equation}
+    \begin{aligned}
+        x_1 &= \theta,\\
+        x_2 &= \dot{\theta}, 
+    \end{aligned}
+\end{equation}
+leading to the system of first order differential equations below:
+\begin{equation}
+    \begin{cases}
+        \dot{x_1} &= x_2,\\
+        \dot{x_2} &= -\omega^2 \sin(x_1 - \varepsilon \sin(\Omega t)),
+    \end{cases}
+\end{equation}
+
+\subsection{Fourier Transform}
+For the study of the frequencies present in the movement of the dipole, we first solved the differential equation numerically, 
+\begin{equation}
+    \int_{a}^{b}
+\end{equation}
