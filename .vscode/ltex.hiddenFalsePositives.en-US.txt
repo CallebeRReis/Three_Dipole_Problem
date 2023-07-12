@@ -1,3 +1,4 @@
 {"rule":"MISSING_APOSTROPHE","sentence":"^\\QAs we ll see, such a phenomenon occurs for the single magnetic dipole in an oscillating magnetic field.\\E$"}
 {"rule":"MISSING_APOSTROPHE","sentence":"^\\QAs we ll see, such a phenomenon occurs for the single magnetic dipole in an oscillating magnetic field.\\E$"}
 {"rule":"MISSING_APOSTROPHE","sentence":"^\\QAs we ll see, such a phenomenon occurs for the single magnetic dipole in an oscillating magnetic field.\\E$"}
+{"rule":"SOME_OF_THE","sentence":"^\\QIn this review, we describe some of the basic physical concepts and mathematical techniques (such as the dynamic merging of coherent structures, nonclassical nonlinear instability, path integrals, the theory of the renormalization-group, low-dimensional chaos, self-similarity and scaling, fractals, coarse-grained helicity and symmetry breaking) that play a central role in the development of these new ideas.\\E$"}
