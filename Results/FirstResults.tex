@@ -1,0 +1,48 @@
+\section{First Results}
+
+In this Section, we\textquotesingle ll briefly discuss the dynamics of the equation (\ref{eq:EquationOfMotion}), with mostly numerical results. 
+
+The dipole\textquotesingle s dynamics was studied for small amplitude of oscillation of the magnetic field. We used two main values for the parameter $\varepsilon$, $\varepsilon = 0.05$ and $\varepsilon = 0.5$, and the following initial conditions for both cases:
+\begin{equation}
+    \begin{cases}
+        \theta (0) &= 1\\        
+        \dot{\theta}(0) &= 0
+    \end{cases}
+\end{equation} 
+In the former case, $\varepsilon = 0.05$, we verify that the dipole\textquotesingle s movement was periodic for all the values of the frequency of the magnetic field $\Omega$ in $[-3,3]$, and as expected, the dipole behaved like a simple pendulum. 
+
+However, for the latter case, $\varepsilon = 0.5$, the dipole\textquotesingle s movement was much more complex. For some subintervals in the frequency range in $[-3,3]$, the movement was not periodic, figure \ref{fig:omega075}, and maybe not even limited. 
+
+In the cases where the movement was oscillatory, the oscillation frequency was not comparable to the frequency of the magnetic field, and for the most time, the frequency of the movement was the natural frequency of the system. 
+
+\begin{figure}
+    \centering
+    \scalebox{0.7}{\input{images/FrequencyBifurcation005.tex}}
+    \caption{Bifurcation diagram of frequencies from the oscillating magnetic field $\Omega$ and the response frequencies on the dipole $\omega$, for the case with $\varepsilon = 0.05$.}
+    \label{fig:bif005}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \scalebox{0.7}{\input{images/FrequencyBifurcation.tex}}
+    \caption{Bifurcation diagram of frequencies from the oscillating magnetic field $\Omega$ and the response frequencies on the dipole $\omega$, for the case with $\varepsilon = 0.5$.}
+    \label{fig:bif05}
+\end{figure}
+\begin{figure*}
+    \begin{subfigure}{\textwidth}
+        \input{images/omega05}
+        \caption{Movement of the dipole with frequency of the external magnetic field being 0.5.}
+        \label{fig:omega05}
+    \end{subfigure}
+    \begin{subfigure}{\textwidth}
+        \input{images/omega075}
+        \caption{Movement of the dipole with frequency of the external magnetic field being 0.75.}
+        \label{fig:omega075}
+    \end{subfigure}
+    \begin{subfigure}{\textwidth}
+        \input{images/omega20}
+        \caption{Movement of the dipole with frequency of the external magnetic field being 2.0.}
+        \label{fig:omega20}
+    \end{subfigure}
+    \caption{Movement of the dipole for different frequencies of the magnetic field. Using $\varepsilon = 0.5$}
+\end{figure*}

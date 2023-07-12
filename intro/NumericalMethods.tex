@@ -1,0 +1,35 @@
+\section{Numerical Methods}
+
+\subsection{Runge-Kutta 4th order}
+\label{sec:RK4}
+In order to investigate the equation (\ref{eq:EquationOfMotion}) numerically, we used the iterative method of Runge-Kutta of fourth order (RK4), which presents a low computational cost, and fourth order accuracy, i.e, at each iteration the error is $\mathcal{O}(h^4)$, where $h$ is the integration step.
+
+Before applying the method, we have transformed the second order differential equation of motion of dipole (\ref{eq:EquationOfMotion}), into two first order differential equation by making the transformations:
+
+\begin{equation}
+    \begin{aligned}
+        x_1 &= \theta,\\
+        x_2 &= \dot{\theta}, 
+    \end{aligned}
+\end{equation}
+leading to the system of first order differential equations below:
+\begin{equation}
+    \begin{cases}
+        \dot{x_1} &= x_2,\\
+        \dot{x_2} &= -\eta^2 \sin(x_1 - \varepsilon \sin(\Omega t)),
+    \end{cases}
+\end{equation}
+We used $h=10^{-4}$ for simple graphs of the equation (\ref{eq:EquationOfMotion}) and $h = 0.05$ for bifurcation diagrams,
+\subsection{Simpson\textquotesingle s 1/3 rule and Fourier transform}
+After solving the differential equation numerically using the \hyperref[sec:RK4]{RK4} method, we used the Simpson\textquotesingle s $1/3$ rule, equation (\ref{eq:SimpsonsRule}), to numerically integrate the Fourier transform for : 
+\begin{equation}
+    \dfrac{2}{T}\int_{0}^{T} f(t) e^{- i \xi t}dt
+\end{equation}
+\begin{equation}
+    \int_{a}^{b} f(x) dx = \dfrac{1}{3} h\bigg[ f(a) + 4\sum^{n/2}_{n=1}f(x_{2i-1}) +2 \sum^{n/2 - 1}_{n=1}f(x_{2i})+f(b) \bigg]
+    \label{eq:SimpsonsRule}
+\end{equation}
+\subsection{Frequency Bifurcation Diagrams}
+
+For creating the bifurcation diagrams, figures \ref{fig:bif005} and \ref{fig:bif05}, we vary the frequency of the magnetic field, $\Omega$, from $-3$ to $3$ using a step of $0.01$, and for each frequency $\Omega$ we solved the equation (\ref{eq:EquationOfMotion}) for $t \in [0,500]$ using the \hyperref[sec:RK4]{RK4} method, then applied the Fourier transform and filtered out the frequencies with amplitude less than $20\%$ of the maximum amplitude. Finally, for each $\Omega$ we plotted the frequencies obtained from the Fourier transform $\omega$, creating a graph $(\Omega,\omega)$ where the $\omega$ frequencies represent the frequency response of the system.  
+
