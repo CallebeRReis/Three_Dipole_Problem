@@ -37,3 +37,4 @@ Debye-Weiss
 helimagnet
 dipolar
 Zeeman
+subranges
